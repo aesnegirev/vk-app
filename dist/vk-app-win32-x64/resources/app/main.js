@@ -98,7 +98,7 @@ app.on('ready', function () {
   });
 
   win.loadFile('views/index.html')
-  //win.webContents.openDevTools()
+  win.webContents.openDevTools()
 
 
 
@@ -126,8 +126,9 @@ app.on('ready', function () {
       let hash = url.parse(uri)
 
       if(hash.pathname == "/blank.html"){
-        token = hash
+        token = hash.hash
         event.returnValue = true
+        win.loadFile('views/welcome.html')
         authWindow.close()
       }
 
