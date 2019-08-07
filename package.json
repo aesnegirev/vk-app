@@ -1,0 +1,29 @@
+{
+  "name": "vk-app",
+  "version": "1.0.0",
+  "description": "vk-app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . vk-app --platform=win32 --arch=x64 --out=dist --ignore=dist --prune"
+  },
+  "devDependencies": {
+    "electron": "^6.0.0",
+    "electron-log": "^3.0.7",
+    "electron-packager": "^14.0.4",
+    "update-electron-app": "^1.5.0"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aesnegirev/vk-app.git"
+  },
+  "author": "devis.su",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aesnegirev/vk-app/issues"
+  },
+  "homepage": "https://github.com/aesnegirev/vk-app#readme"
+}
