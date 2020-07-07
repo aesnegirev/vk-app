@@ -8,7 +8,7 @@
     "build": "electron-packager . vk-app --platform=win32 --arch=x64 --out=dist --ignore=dist --prune"
   },
   "devDependencies": {
-    "electron": "^6.0.0",
+    "electron": "^7.2.4",
     "electron-log": "^3.0.7",
     "electron-packager": "^14.0.4",
     "update-electron-app": "^1.5.0"
